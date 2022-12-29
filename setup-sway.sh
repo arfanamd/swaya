@@ -13,7 +13,7 @@ notice() {
 }
 install() {
 	echo "[32mInstalling[0m: ${@}"
-	#apk add ${@}
+	apk add ${@}
 }
 prompt() {
 	echo -e "\nIf you see an error, please abort the installation!"
@@ -30,8 +30,8 @@ prompt() {
 }
 systemPrep() {
 	echo "[ [32mSetting-up services[0m ]"
-	#setup-devd udev
-	#rc-update add seatd && rc-service seatd start
+	setup-devd udev
+	rc-update add seatd && rc-service seatd start
 	
 	local input
 	read -p 'name of the another user ? ' input
@@ -45,9 +45,9 @@ systemPrep() {
 	fi
 
 	echo 'group setting...'
-	#addgroup "${input}" input
-	#addgroup "${input}" video
-	#addgroup "${input}" seat
+	addgroup "${input}" input
+	addgroup "${input}" video
+	addgroup "${input}" seat
 	
 	echo 'shell setting...'
 	#chsh "${input}"
