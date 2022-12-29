@@ -50,7 +50,7 @@ systemPrep() {
 	addgroup "${input}" seat
 	
 	echo 'shell setting...'
-	#chsh "${input}"
+	chsh "${input}"
 	
 	echo 'done'
 }
@@ -71,7 +71,7 @@ SWAY_PKGS=('sway' 'sway-doc' 'swaylock-effects' 'swaylock-effects-doc' 'swaylock
 	'weston' 'weston-shell' 'weston-shell-desktop' 'weston-shell-fullscreen' 'weston-terminal' \
 	'weston-clients'  'weston-backend-drm' \
 )
-ADDI_PKGS=('bash' 'git' 'foot' 'fuzzle' 'command-not-fond' 'doas' 'shadow')
+ADDI_PKGS=('bash' 'git' 'foot' 'fuzzel' 'command-not-found' 'doas' 'shadow')
 
 notice
 prompt; install ${BASE_PKGS[@]}
