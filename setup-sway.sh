@@ -68,7 +68,7 @@ BASE_PKGS=( \
 FONT_PKGS=('ttf-dejavu')
 SWAY_PKGS=('sway' 'sway-doc' 'swaylock-effects' 'swaylock-effects-doc' 'swaylockd' 'swaylockd-doc' \
 	'swaybg' 'swaybg-doc' 'swayidle' 'swayidle-doc' \
-	'weston' 'weston-shell' 'weston-shell-desktop' 'weston-shell-fullscreen' 'weston-terminal' \
+	'weston' 'weston-shell-desktop' 'weston-shell-fullscreen' 'weston-terminal' \
 	'weston-clients'  'weston-backend-drm' \
 )
 ADDI_PKGS=('bash' 'git' 'foot' 'fuzzel' 'command-not-found' 'doas' 'shadow')
